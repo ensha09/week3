@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+// Function to swap two numbers
+void swap(int *a, int *b)
+{
+    int temp;
+
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main()
+{
+    int x, y;
+
+    // Read two numbers
+    printf("Enter two numbers: ");
+    scanf("%d%d", &x, &y);
+
+    // Call swap function
+    swap(&x, &y);
+
+    // Display swapped values
+    printf("After Swapping:\n");
+    printf("x = %d\n", x);
+    printf("y = %d\n", y);
+
+    return 0;
+}
